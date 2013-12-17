@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 # sub POE::Kernel::ASSERT_DEFAULT () { 1 }
-use lib '../lib';
+use lib qw(../lib  lib);
 use POE qw(Component::IRC
 Component::IRC::Plugin::WWW::OhNoRobotCom::Search);
 
@@ -12,6 +12,7 @@ my $irc = POE::Component::IRC->spawn(
     server      => 'irc.freenode.net',
     port        => 6667,
     ircname     => 'Bot for searching ohnorobot.com',
+    debug => 1,
 );
 
 POE::Session->create(

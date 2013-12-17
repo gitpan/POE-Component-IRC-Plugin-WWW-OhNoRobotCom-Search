@@ -3,7 +3,7 @@ package POE::Component::IRC::Plugin::WWW::OhNoRobotCom::Search;
 use warnings;
 use strict;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use POE::Component::WWW::OhNoRobotCom::Search;
 use base 'POE::Component::IRC::Plugin::BasePoCoWrap';
@@ -67,6 +67,8 @@ sub _make_poco_call {
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 
